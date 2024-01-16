@@ -1,63 +1,23 @@
 <template>
-  <div class="w-full flex justify-center gap-4">
-    <button @click="renderH1">添加Success</button>
-    <button @click="renderH2">添加Warning</button>
-    <button @click="renderH3">添加Info</button>
-    <button @click="renderH4">添加Error</button>
-    <button @click="isShowDialog = true">dialog</button>
-  </div>
-  <Dialog
-    :show="isShowDialog"
-    @confirm="handleConfirm"
-    @cancel="handleCancel"
-    confirm-type="primary">
-    <div class="w-full h-full">
-      body
+  <div class="w-screen h-screen flex">
+    <div class="w-60 h-full overflow-y-auto border-r">
+      <RouterLink
+        v-for="route in routes"
+        :key="route.path"
+        :to="route.path">
+        <div class="mt-2 py-2 mx-2 text-center border shadow rounded">
+          {{ route.name }}
+        </div>
+      </RouterLink>
     </div>
-    </Dialog>
+    <div class="flex-1 h-full flex justify-center items-center">
+      <RouterView></RouterView>
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">
-import { message } from './components/message'
-import Dialog from './components/dialog/dialog.vue'
-import { ref } from 'vue'
-
-const isShowDialog = ref(false)
-
-const renderH1 = () => {
-  message({ message: '测试success', type: 'success' })
-}
-const renderH2 = () => {
-  message({ message: '测试warning', type: 'warning' })
-}
-const renderH3 = () => {
-  message({ message: '测试info', type: 'info' })
-}
-const renderH4 = () => {
-  message({ message: '测试error', type: 'error' })
-}
-
-const handleConfirm = () => {
-  isShowDialog.value = false
-}
-
-const handleCancel = () => {
-  isShowDialog.value = false
-}
+import { routes } from './router'
 </script>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
-./components/message
+<style scoped></style>

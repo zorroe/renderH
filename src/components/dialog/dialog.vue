@@ -91,7 +91,6 @@ const handleCancel = () => {
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translate3d(0, -20, 0);
   }
 
   to {
@@ -106,7 +105,6 @@ const handleCancel = () => {
 
   to {
     opacity: 0;
-    transform: translate3d(0, -20, 0);
   }
 }
 
