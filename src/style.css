@@ -83,7 +83,7 @@ button:focus-visible {
 }
 
 .message-container {
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 16px;
   transform: translateX(-50%);
