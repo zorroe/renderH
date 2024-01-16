@@ -8,7 +8,7 @@
 </template>
 
 <script setup lang="ts">
-import { message } from './components'
+import { message } from './components/message'
 
 const renderH1 = () => {
   message({ message: '测试success', type: 'success' })
@@ -38,3 +38,4 @@ const renderH4 = () => {
   filter: drop-shadow(0 0 2em #42b883aa);
 }
 </style>
+./components/message
