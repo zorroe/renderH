@@ -10,7 +10,7 @@
         </div>
       </RouterLink>
     </div>
-    <div class="flex-1 h-full flex justify-center items-center">
+    <div class="flex-1 h-full flex flex-col items-center overflow-y-auto">
       <RouterView></RouterView>
     </div>
   </div>

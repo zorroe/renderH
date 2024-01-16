@@ -26,7 +26,7 @@
         <div class="w-full flex justify-center gap-12">
           <div
             v-show="showConfirm"
-            class="flex justify-center items-center px-8 py-2 border rounded shadow cursor-pointer hover:scale-105 active:scale-95 transition-all duration-200 antialiased"
+            class="flex justify-center items-center px-8 py-2 border rounded shadow cursor-pointer hover:scale-105 active:scale-95 transition-all duration-200"
             :class="confirmType + '-btn'"
             @click="handleConfirm">
             确定
