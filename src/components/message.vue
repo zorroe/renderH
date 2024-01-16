@@ -1,7 +1,7 @@
 <template>
   <Transition
-    enter-active-class="animate__animated meslideInDown"
-    leave-active-class="animate__animated meslideOutUp"
+    enter-active-class="meslideInDown"
+    leave-active-class="meslideOutUp"
     mode="out-in">
     <div
       class="rounded border-s-4 px-4 py-2 my-2 transition-all duration-100 ease-in-out"
