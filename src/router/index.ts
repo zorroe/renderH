@@ -3,6 +3,7 @@ const Home = () => import('../views/home/index.vue')
 const Message = () => import('../views/message/index.vue')
 const Dialog = () => import('../views/dialog/index.vue')
 const Sticky = () => import('../views/sticky/index.vue')
+const Loading = () => import('../views/loading/index.vue')
 
 export const routes = [
   {
@@ -25,6 +26,11 @@ export const routes = [
     component: Sticky,
     name: 'sticky',
   },
+  {
+    path: '/loading',
+    component: Loading,
+    name: 'loading'
+  }
 ]
 
 export const router = createRouter({
