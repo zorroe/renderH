@@ -1,0 +1,12 @@
+<template>
+  <Button type="primary" icon="material-symbols:10k">primary</Button>
+  <Button type="warning" disabled round>warning</Button>
+  <Button icon="material-symbols:14mp-outline" type="primary" round></Button>
+  <Button>default</Button>
+</template>
+
+<script setup lang="ts">
+import Button from '../../components/button/button.vue'
+</script>
+
+<style scoped></style>
