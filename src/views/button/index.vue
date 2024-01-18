@@ -1,6 +1,7 @@
 <template>
   <Button type="primary" icon="material-symbols:10k">primary</Button>
-  <Button type="warning" disabled round>warning</Button>
+  <Button icon="material-symbols:10k" round></Button>
+  <Button type="warning" disabled>warning</Button>
   <Button icon="material-symbols:14mp-outline" type="primary" round></Button>
   <Button>default</Button>
 </template>

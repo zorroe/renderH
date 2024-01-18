@@ -1,39 +1,39 @@
 .hl-button-default {
-  @apply text-[#666] bg-white border border-[#333] hover:text-green-500 hover:bg-green-200 hover:border-green-500 active:border-green-600 py-2 transition-all select-none;
+  @apply text-[#666] bg-white border border-[#333] hover:text-green-500 hover:bg-green-200 hover:border-green-500 active:border-green-600  transition-all select-none;
 }
 
-.hl-button-default-disabled{
-  @apply text-[#999] border border-[#999] hover:text-[#999] hover:border-[#999] active:border-[#999]
+.hl-button-default-disabled {
+  @apply text-[#999] border border-[#999] hover:text-[#999] hover:border-[#999] active:border-[#999];
 }
 
 .hl-button-primary {
-  @apply text-white bg-green-500 hover:bg-green-400 active:bg-green-600 py-2 transition-all select-none;
+  @apply text-white bg-green-500 hover:bg-green-400 active:bg-green-600 transition-all select-none;
 }
 
-.hl-button-primary-disabled{
-  @apply bg-green-300 hover:bg-green-300 active:bg-green-300 cursor-not-allowed
+.hl-button-primary-disabled {
+  @apply bg-green-300 hover:bg-green-300 active:bg-green-300 cursor-not-allowed;
 }
 
 .hl-button-warning {
-  @apply text-white bg-yellow-500 hover:bg-yellow-400 active:bg-yellow-600 py-2 transition-all select-none;
+  @apply text-white bg-yellow-500 hover:bg-yellow-400 active:bg-yellow-600 transition-all select-none;
 }
 
-.hl-button-warning-disabled{
-  @apply bg-yellow-300 hover:bg-yellow-300 active:bg-yellow-300 cursor-not-allowed
+.hl-button-warning-disabled {
+  @apply bg-yellow-300 hover:bg-yellow-300 active:bg-yellow-300 cursor-not-allowed;
 }
 
 .hl-button-info {
-  @apply text-white bg-gray-500 hover:bg-gray-400 active:bg-gray-600 py-2 transition-all select-none;
+  @apply text-white bg-gray-500 hover:bg-gray-400 active:bg-gray-600 transition-all select-none;
 }
 
-.hl-button-info-disabled{
-  @apply bg-gray-300 hover:bg-gray-300 active:bg-gray-300 cursor-not-allowed
+.hl-button-info-disabled {
+  @apply bg-gray-300 hover:bg-gray-300 active:bg-gray-300 cursor-not-allowed;
 }
 
 .hl-button-danger {
-  @apply text-white bg-red-500 hover:bg-red-400 active:bg-red-600 py-2 px-4 rounded transition-all select-none;
+  @apply text-white bg-red-500 hover:bg-red-400 active:bg-red-600 px-4 rounded transition-all select-none;
 }
 
-.hl-button-danger-disabled{
-  @apply bg-red-300 hover:bg-red-300 active:bg-gray-300 cursor-not-allowed
+.hl-button-danger-disabled {
+  @apply bg-red-300 hover:bg-red-300 active:bg-gray-300 cursor-not-allowed;
 }

@@ -3,7 +3,7 @@
     <Icon
       v-if="$props.icon"
       :icon="props.icon"></Icon>
-    <slot></slot>
+    <slot name="default"></slot>
   </span>
 </template>
 
@@ -21,7 +21,7 @@ const props = withDefaults(defineProps<Partial<Props>>(), {
   tag: 'button',
   icon: '',
   disabled: false,
-  round: false
+  round: false,
 })
 
 const cls = computed(() => {

@@ -17,9 +17,9 @@ export const buildCls = (props: Props) => {
     cls.push(`${prefix}-${props.tag}-${props.type}-disabled`)
   }
   if (props.round) {
-    cls.push('rounded-full px-2')
+    cls.push('rounded-full px-2 py-2')
   } else {
-    cls.push('rounded px-4')
+    cls.push('rounded px-4 py-1')
   }
   return cls.join(' ')
 }
