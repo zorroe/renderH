@@ -1,5 +1,5 @@
 <template>
-  <Child v-model:btn-name="btnName"·></Child>
+  <Child v-model:btn-name="btnName"></Child>
   <el-button>{{ btnName }}</el-button>
 </template>
 
