@@ -5,7 +5,8 @@ const Dialog = () => import('../views/dialog/index.vue')
 const Sticky = () => import('../views/sticky/index.vue')
 const Loading = () => import('../views/loading/index.vue')
 const Button = () => import('../views/button/index.vue')
-const VModel = ()=> import('../views/vmodel/index.vue')
+const VModel = () => import('../views/vmodel/index.vue')
+const Debounce = () => import('../views/debounce/index.vue')
 
 export const routes = [
   {
@@ -41,8 +42,13 @@ export const routes = [
   {
     path: '/vmodel',
     component: VModel,
-    name: 'vmodel'
-  }
+    name: 'vmodel',
+  },
+  {
+    path: '/debounce',
+    component: Debounce,
+    name: 'debounce',
+  },
 ]
 
 export const router = createRouter({
