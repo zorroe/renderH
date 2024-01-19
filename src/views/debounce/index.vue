@@ -1,19 +1,21 @@
 <template>
-  <div>使用自定义指令实现防抖</div>
-  <el-button v-debounce="['click', handleClick1, 1000]">指令防抖</el-button>
-  <div>指令防抖：{{ debounceTimes }}</div>
-  <div class="h-10"></div>
-  <div>使用vueuse防抖</div>
-  <el-button @click="debounceClick"> vueuse防抖 </el-button>
-  <div>vueuse防抖：{{ debounceTimes }}</div>
-  <div class="h-10"></div>
-  <div>使用自定义指令实现节流</div>
-  <el-button v-throttle="['click', handleClick2, 1000]">指令节流</el-button>
-  <div>指令节流：{{ throttleTimes }}</div>
-  <div class="h-10"></div>
-  <div>使用自定义指令实现节流</div>
-  <el-button @click="throttleClick">vueuse节流</el-button>
-  <div>vueuse节流：{{ throttleTimes }}</div>
+  <div>
+    <div>使用自定义指令实现防抖</div>
+    <el-button v-debounce="['click', handleClick1, 1000]">指令防抖</el-button>
+    <div>指令防抖：{{ debounceTimes }}</div>
+    <div class="h-10"></div>
+    <div>使用vueuse防抖</div>
+    <el-button @click="debounceClick"> vueuse防抖 </el-button>
+    <div>vueuse防抖：{{ debounceTimes }}</div>
+    <div class="h-10"></div>
+    <div>使用自定义指令实现节流</div>
+    <el-button v-throttle="['click', handleClick2, 1000]">指令节流</el-button>
+    <div>指令节流：{{ throttleTimes }}</div>
+    <div class="h-10"></div>
+    <div>使用自定义指令实现节流</div>
+    <el-button @click="throttleClick">vueuse节流</el-button>
+    <div>vueuse节流：{{ throttleTimes }}</div>
+  </div>
 </template>
 
 <script setup lang="ts">

@@ -1,19 +1,21 @@
 <template>
-  <button @click="handleLoading">显示</button>
-  <div
-    v-loading2="loading"
-    class="h-40 w-80 mt-10 flex justify-center items-center border rounded-xl">
-    loading
-  </div>
-  <div
-    v-loading="loading"
-    class="h-40 w-80 mt-10 flex justify-center items-center border rounded-xl">
-    loading
-  </div>
-  <div
-    v-loading="loading"
-    class="h-40 w-80 mt-10 flex justify-center items-center border rounded-xl">
-    loading
+  <div>
+    <button @click="handleLoading">显示</button>
+    <div
+      v-loading2="loading"
+      class="h-40 w-80 mt-10 flex justify-center items-center border rounded-xl">
+      loading
+    </div>
+    <div
+      v-loading="loading"
+      class="h-40 w-80 mt-10 flex justify-center items-center border rounded-xl">
+      loading
+    </div>
+    <div
+      v-loading="loading"
+      class="h-40 w-80 mt-10 flex justify-center items-center border rounded-xl">
+      loading
+    </div>
   </div>
 </template>
 

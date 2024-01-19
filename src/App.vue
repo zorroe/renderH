@@ -11,7 +11,11 @@
       </RouterLink>
     </div>
     <div class="flex-1 h-full flex flex-col items-center overflow-y-auto">
-      <RouterView></RouterView>
+      <router-view v-slot="{ Component }">
+        <transition mode="out-in">
+          <component :is="Component" />
+        </transition>
+      </router-view>
     </div>
   </div>
 </template>
@@ -20,4 +24,14 @@
 import { routes } from './router'
 </script>
 
-<style scoped></style>
+<style scoped>
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+</style>

@@ -1,14 +1,16 @@
 <template>
-  <div class="w-full flex justify-center gap-4">
-    <button @click="isShowDialog = true">dialog</button>
+  <div>
+    <div class="w-full flex justify-center gap-4">
+      <button @click="isShowDialog = true">dialog</button>
+    </div>
+    <Dialog
+      :show="isShowDialog"
+      @confirm="handleConfirm"
+      @cancel="handleCancel"
+      confirm-type="primary">
+      <div class="w-full h-full">body</div>
+    </Dialog>
   </div>
-  <Dialog
-    :show="isShowDialog"
-    @confirm="handleConfirm"
-    @cancel="handleCancel"
-    confirm-type="primary">
-    <div class="w-full h-full">body</div>
-  </Dialog>
 </template>
 
 <script setup lang="ts">

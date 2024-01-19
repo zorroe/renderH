@@ -1,6 +1,8 @@
 <template>
-  <Child v-model:btn-name="btnName"></Child>
-  <el-button>{{ btnName }}</el-button>
+  <div>
+    <Child v-model:btn-name="btnName"></Child>
+    <el-button>{{ btnName }}</el-button>
+  </div>
 </template>
 
 <script setup lang="ts">

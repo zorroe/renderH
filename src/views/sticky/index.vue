@@ -1,28 +1,30 @@
 <template>
-  <div
-    class="bg-white py-1 my-1"
-    v-for="i in 30">
-    {{ i }}
-  </div>
-  <div
-    class="bg-white h-8"
-    v-sticky:top="20">
-    sticky1---------sticky1
-  </div>
-  <div
-    class="bg-white py-1 my-1"
-    v-for="i in 30">
-    {{ i }}
-  </div>
-  <div
-    class="bg-white h-8"
-    v-sticky>
-    sticky2---------sticky2
-  </div>
-  <div
-    class="bg-white py-1 my-1"
-    v-for="i in 30">
-    {{ i }}
+  <div>
+    <div
+      class="bg-white py-1 my-1"
+      v-for="i in 30">
+      {{ i }}
+    </div>
+    <div
+      class="bg-white h-8"
+      v-sticky:top="20">
+      sticky1---------sticky1
+    </div>
+    <div
+      class="bg-white py-1 my-1"
+      v-for="i in 30">
+      {{ i }}
+    </div>
+    <div
+      class="bg-white h-8"
+      v-sticky>
+      sticky2---------sticky2
+    </div>
+    <div
+      class="bg-white py-1 my-1"
+      v-for="i in 30">
+      {{ i }}
+    </div>
   </div>
 </template>
 
